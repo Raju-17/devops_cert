@@ -13,16 +13,9 @@
 
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>test</directory>
+            <directory>.</directory>
         </testsuite>
     </testsuites>
-
-    <filter>
-        <whitelist>
-            <directory suffix=".php">website/</directory>
-        </whitelist>
-    </filter>
-
     <php>
         <env name="APP_ENV" value="testing"/>
     </php>
