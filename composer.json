@@ -1,8 +1,10 @@
 {
 	"require-dev": {
-		"phpunit/phpunit" : "^8"
+		"phpunit/phpunit" : "^7"
 	},
 	"autoload": {
-		"psr-0" : {"":"website/"}
+		"psr-0" : {
+			"website": ""
+		}
 	}
 }
