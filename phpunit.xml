@@ -8,13 +8,21 @@
     convertNoticesToExceptions  = "true"
     convertWarningsToExceptions = "true"
     processIsolation            = "false"
-    stopOnFailure               = "false">
+    stopOnFailure               = "false"
+    syntaxCheck                 = "false">
 
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>.</directory>
+            <directory>test</directory>
         </testsuite>
     </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+
     <php>
         <env name="APP_ENV" value="testing"/>
     </php>
