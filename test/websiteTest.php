@@ -1,5 +1,5 @@
 <?php
-
+require_once 'vendor/autoload.php';
 class websiteTest extends PHPUnit_Extension_Selenium2TestCase {
 	public function setUp() {
 		$this->setHost('localhost');
