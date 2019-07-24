@@ -1,6 +1,5 @@
 <?php
 
-require_once 'PHPUnit/Extensions/Selenium2TestCase.php';
 class websiteTest extends PHPUnit_Extension_Selenium2TestCase {
 	public function setUp() {
 		$this->setHost('localhost');
