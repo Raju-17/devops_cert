@@ -11,3 +11,6 @@ HEALTHCHECK --interval=5s \
 
 # tell docker which port to expose
 EXPOSE 8000
+
+#Copying the folder
+COPY . .
