@@ -1,5 +1,5 @@
 #use a node base image
-FROM node:7-onbuild
+FROM php:7.1-cli
 
 #set maintainer
 LABEL maintainer “raj170594@gmail.com”
@@ -11,3 +11,6 @@ HEALTHCHECK --interval=5s \
 
 # tell docker which port to expose
 EXPOSE 8000
+
+COPY . /usr/src/dockerimage
+WORKDIR /usr/src/dockerimage
