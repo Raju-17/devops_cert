@@ -8,7 +8,7 @@ node {
     }
     
     stage('Build') {
-        ansiblePlaybook becomeUser: 'root', installation: 'ansible-2.6.1', inventory: '${WORKSPACE}/${env}', playbook: '${WORKSPACE}/selenium.yml', sudoUser: 'root'
+        ansiblePlaybook becomeUser: 'root', installation: 'ansible-2.6.1', inventory: '${WORKSPACE}', playbook: '${WORKSPACE}/selenium.yml', sudoUser: 'root'
     }
     
     stage ("clone repo") {
