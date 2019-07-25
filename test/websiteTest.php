@@ -1,6 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
-class websiteTest extends PHPUnit_Extension_Selenium2TestCase {
+class websiteTest extends PHPUnit_Framework_TestCase {
 	public function setUp() {
 		$this->setHost('localhost');
 		$this->setPort('5100');
