@@ -1,6 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
-class websiteTest extends PHPUnit_Framework_TestCase {
+class websiteTest {
 	public function setUp() {
 		$this->setHost('localhost');
 		$this->setPort('5100');
